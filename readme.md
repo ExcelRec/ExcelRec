@@ -1,4 +1,6 @@
-# ExcelRec: Evolution-guided MoE for Causal Cross-domain SequentiaL Recommendation
+# ExcelRec: Causal Cross-Domain Sequential Recommendation with Preference Evolution
 
-In this paper, we propose a framework **ExcelRec** that address the challenges about the neglect of latent attribute correlations between cross-domain items, inadequate modeling of interest evolution signals, and domain isolated bias.
+Cross-Domain Sequential Recommendation (CDSR) has attracted growing interest for alleviating data sparsity through multi-domain knowledge integration. While progress has been made, semantic, temporal, and behavioral heterogeneity across domains poses key challenges for effective knowledge transfer. Existing CDSR approaches exhibit limita-
+tions in modeling cross-domain attribute relationships, capturing both domain-specific and cross-domain interest dynamics, and addressing activity frequency bias that distorts true preferences. Therefore, we propose a novel model, **ExcelRec** (Evolution-aware miXture of experts for Causal cross-domain sEquentiaL RECommendation). Specifically, we first propose an LLM-augmented co-occurrence miner, which enriches item representations with structured semantic augmentation by leveraging LLMs. Then we propose an evolution-aware cross-domain preference model to address temporal heterogeneity in cross-domain interest transitions, using a Temporal-Domain dual-conditioned Mixture of Experts (TD-MoE) to capture both fast and slow preference dynamics. Finally, we propose a causality-enhanced preference learning strategy to eliminate activity-induced bias by disentangling spurious activity patterns from genuine preferences. Experimental results demonstrate the high effectiveness of our proposed ExcelRec model.
+
 
